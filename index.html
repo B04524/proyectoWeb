@@ -4,6 +4,7 @@
     git add .        Es para agregar un archivo al repostiorio local
     git commit -m "comentario"       Para grabar la nueva versión, indicando lo que se modificó
     git push         Es para enviarlo al repositorio compartido de la web github.com
+    Con Ctrl + ] se puede comentar el código seleccionado
 --> 
 
 <!DOCTYPE html>
@@ -12,16 +13,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./estilos.css">
     <title>Mi PortFolio</title>
 </head>
 <body>
+
+    <header>
+        <h1>Matias Amanto</h1>
+    </header>
+
+<!-- Opción mediante tablas (no es recomendable para este contenido, ya que el formato lo damos con CSS):
+    <table>
+    <tr>
+        <td rowspan="4"><img src="./imagenes/buho.png" alt="Foto de mi perfil"></td>
+        <td>Fecha de Nacimiento:</td>
+        <td>25/04/1990</td>
+    </tr>
+
+    <tr>
+        <td>Domicilio:</td>
+        <td>Reconquista 101</td>
+    </tr>
+
+    <tr>
+        <td>Teléfono:</td>
+        <td>4347-5665</td>
+    </tr>
     
-<h1>Matias Amanto</h1>
+    <tr>
+        <td>Email:</td>
+        <td>maamanto@hipotecario.com.ar</td>
+    </tr>
+
+</table> -->
+
+<section>
+
+    <h2>Datos Personales</h2>
+
+    <img src="./imagenes/buho.png" alt="Foto de mi perfil">
+
+    <div>
+        <p><span>Fecha de Nacimiento:</span> <span>25/04/1990</span></p>
+        <p><span>Domicilio:</span> <span>Reconquista 101</span></p>
+        <p><span>Teléfono:</span> <span>4347-5665</span></p>
+        <p><span>Email:</span> <span>maamanto@hipotecario.com.ar</span> </p>
+    </div>
+
+</section>
 
 
-<h2>Datos Personales</h2>
+<section>
 
-<h2>Antecedentes Laborales</h2>
+    <h2>Estudios</h2>
+    
+    <ul>
+        <li>Estudio Primario y Secundario: Instituto Santa Cruz</li>
+        <li>Estudio Universitario: Lic. en Administración y Sistemas, UBA</li>
+    </ul>
+
+</section>
+
+
+<section>
+
+    <h2>Antecedentes Laborales</h2>
+
+    <ul>
+        <li><img src="./imagenes/bh2.png" alt="Foto de mi trabajo">
+            <div>
+                <h3>Banco Hipotecario - 2013-2018</h3>
+                <p>
+                    Analista de ACP - Préstamos Minoristas
+                </p>
+            </div>
+        </li>
+        <li><img src="./imagenes/bh.png" alt="Foto de mi trabajo">
+            <div>
+                <h3>Banco Hipotecario - 2018-2022</h3>
+                <p>
+                    Analista de OMP - Préstamos Minoristas
+                </p>
+            </div>
+        </li>
+        <li><img src="./imagenes/procrear.png" alt="Foto de mi trabajo">
+            <div>
+                <h3>Banco Hipotecario - 2022-Actualidad</h3>
+                <p>
+                    Analista de Desarrollos de Vivienda - Préstamos Minoristas
+                </p>
+            </div>
+        </li>
+    </ul>
+  
+</section>
+
+
+<footer>
+    <h2>Mis Redes Sociales</h2>
+    <ul>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Youtube</li>
+        <li>Twitter</li>
+    </ul>
+</footer>
 
 </body>
 </html>
