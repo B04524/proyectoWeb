@@ -19,7 +19,7 @@
 <body>
 
     <header>
-        <h1>Matias Amanto</h1>
+        <h1>Matías Amanto</h1>
     </header>
 
 <!-- Opción mediante tablas (no es recomendable para este contenido, ya que el formato lo damos con CSS):
@@ -47,17 +47,17 @@
 
 </table> -->
 
-<section>
+<h2>Datos Personales</h2>
 
-    <h2>Datos Personales</h2>
+<section id="initialSection">
 
-    <img src="./imagenes/buho.png" alt="Foto de mi perfil">
+    <img id="fotoPerfil" class="borde fotoCircular" src="./imagenes/buho.png" width="200px" alt="Foto de mi perfil">
 
-    <div>
-        <p><span>Fecha de Nacimiento:</span> <span>25/04/1990</span></p>
-        <p><span>Domicilio:</span> <span>Reconquista 101</span></p>
-        <p><span>Teléfono:</span> <span>4347-5665</span></p>
-        <p><span>Email:</span> <span>maamanto@hipotecario.com.ar</span> </p>
+    <div id="divDatosPersonales" class="borde">
+        <p><span class="datosPersonales">Fecha de Nacimiento:</span> <span>25/04/1990</span></p>
+        <p><span class="datosPersonales">Domicilio:</span> <span>Reconquista 101</span></p>
+        <p><span class="datosPersonales">Teléfono:</span> <span>4347-5665</span></p>
+        <p><span class="datosPersonales">Email:</span> <span>maamanto@hipotecario.com.ar</span> </p>
     </div>
 
 </section>
@@ -79,31 +79,46 @@
 
     <h2>Antecedentes Laborales</h2>
 
-    <ul>
-        <li><img src="./imagenes/bh2.png" alt="Foto de mi trabajo">
-            <div>
-                <h3>Banco Hipotecario - 2013-2018</h3>
-                <p>
-                    Analista de ACP - Préstamos Minoristas
-                </p>
+    <ul class="trabajos" >
+        <li class="actual borde antecedentes">   
+            <div  class="divImage">  
+                <img class="fotoCircular borde" src="./imagenes/bh2.bmp" width="75%" alt="Foto de mi trabajo">
+            </div>
+
+            <div class="divData">
+                    <h3>Banco Hipotecario - 2013-2018</h3>
+                    <p>
+                        Gcia. ACP - Analista Préstamos Minoristas
+                    </p>
+            </div>
+        </li>         
+                                    
+        <li class="actual borde antecedentes">   
+            <div  class="divImage">  
+                <img class="fotoCircular borde"src="./imagenes/bh.png" width="75%" alt="Foto de mi trabajo">
+            </div>
+
+            <div class="divData">
+                    <h3>Banco Hipotecario - 2018-2022</h3>
+                    <p>
+                        Gcia. OMP - Analista Préstamos Minoristas
+                    </p>
+            </div>
+        </li>   
+        
+        <li class="actual borde antecedentes">   
+            <div  class="divImage">  
+                <img class="fotoCircular borde" src="./imagenes/procrear.png" width="75%" alt="Foto de mi trabajo">
+            </div>
+
+            <div class="divData">
+                    <h3>Banco Hipotecario - 2022-Actualidad</h3>
+                    <p>
+                        Gcia. Desarrollos de Vivienda - Analista Préstamos Minoristas
+                    </p>
             </div>
         </li>
-        <li><img src="./imagenes/bh.png" alt="Foto de mi trabajo">
-            <div>
-                <h3>Banco Hipotecario - 2018-2022</h3>
-                <p>
-                    Analista de OMP - Préstamos Minoristas
-                </p>
-            </div>
-        </li>
-        <li><img src="./imagenes/procrear.png" alt="Foto de mi trabajo">
-            <div>
-                <h3>Banco Hipotecario - 2022-Actualidad</h3>
-                <p>
-                    Analista de Desarrollos de Vivienda - Préstamos Minoristas
-                </p>
-            </div>
-        </li>
+            
     </ul>
   
 </section>
